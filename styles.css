@@ -59,14 +59,13 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-	margin-left: 25%;
+	border-style: dashed;
+	border-width: 5px;
+	border-radius: 35px;
 	margin-top: 20%;
 	font-size: 30px;
-}
+	text-align: center;
 
-.header-text h1{
-	display: inline-block;
-	font-size: 60px;
 	background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -75,7 +74,11 @@ nav ul li a:hover::after{
 	-webkit-animation: rainbowanim 10s ease infinite;
 		-moz-animation: rainbowanim 10s ease infinite;
 			animation:	rainbowanim 10s ease infinite;
+}
 
+.header-text h1{
+	display: inline-block;
+	font-size: 60px;
 	margin-top: 20px;
 }
 
