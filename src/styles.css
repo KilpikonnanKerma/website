@@ -1,0 +1,101 @@
+/* $lavender-pink: #ffb8d1ff;
+$space-cadet: #2a324bff;
+$slate-gray: #767b91ff;
+$alabaster: #dee2d6ff;
+$light-green: #beef9eff;
+text: #121724 */
+
+@font-face {
+	font-family: 'Halo Dek';
+	src: url('../res/Halo Dek.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#newfont{
+    font-family: 'Halo Dek';
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: #dee2d6;
+}
+
+.header {
+	position: relative;
+	text-align: center;
+
+	background-color: #767b91ff;
+}
+
+.header .title {
+	font-family: 'Halo Dek';
+	font-size: 5em;
+
+	padding: 0.15em;
+
+	color: #121724
+}
+
+.boder {
+	position: relative;
+	align-items: center;
+}
+
+.boder .button {
+    background: #dee2d6ff;
+    margin: 10px;
+    padding: 15px 18px;
+
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+
+    color: #dee2d6ff;
+    cursor: crosshair;
+	border: none;
+    border-radius: 8px;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+
+	background-image: repeating-linear-gradient(45deg, #ffb8d1ff 12px 36px, #2a324bff 36px 60px);
+    color: #121724;
+    background-size: 300% 150%;
+}
+
+.boder .button:hover {
+    background-position: 20% center;
+}
+
+.boder .button:active:after {
+    /* width: 0; */
+	transition: 69ms ease-in-out;
+
+	width: 100%;
+	height: 100%;
+}
+
+.boder .button:after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    transform-origin: center;
+    background: #dee2d6ff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 7px;
+
+	transition: 69ms ease-in-out;
+}
