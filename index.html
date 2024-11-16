@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>shit</title>
+		<title>Nicon nettisivu</title>
 		<link rel="stylesheet" href="src/styles.css">
 		<script src="src/script.js"></script>
 
@@ -42,7 +42,7 @@
 				<p class="background">
 					I have been doing all kinds of computer shit since I was an infant. And I have gathered a pretty big catalog of random skills along the way.
 				</p>
-				<p>My hobbies are making games/websites/other stuff and playing guitar. I also REALLY like to listen to music. I can't make a day without listening to some good riffs.</p>
+				<p>My hobbies are making games/websites/other stuff and playing guitar. I also REALLY like to listen to music. I can't get through a day without listening to some good riffs.</p>
 				<p>That's about it!</p>
 				<button class="oth-button" onclick="showSkills()">My skills</button>
 				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
@@ -51,7 +51,32 @@
 			<div class="space"></div>
 
 			<div id="skills" class="skills">
-				<p>no skills to see here</p>
+				<div class="tabs">
+					<details name="tab" tabindex="1" open>
+						<summary>Languages</summary>
+						<p>Here are languages that I know how to use. (I didn't include scripting languages)</p>
+						<div id="skillbox">
+							<div class="SkillBar">
+								<div id="Skill-HTML"> 
+								  <span class="Skill-Area ">HTML</span>
+								  <span class="PercentText ">100%</span>
+								</div>
+							</div>
+							<p>C++</p>
+							<p>C#</p>
+							<p>Python</p>
+							<p>Java</p>
+							<p>JavaScript</p>
+							<p>Assembly x86</p>
+						</div>
+					</details>
+					<details name="tab" tabindex="2">
+						<summary>Softwares</summary>
+					</details>
+					<details name="tab" tabindex="3">
+						<summary>Other</summary>
+					</details>
+				</div>
 				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 			</div>
 		</div>

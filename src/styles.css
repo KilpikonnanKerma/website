@@ -52,18 +52,6 @@ body {
 	color: #c4c3c6;
 }
 
-@media screen and (min-width: 651px) {
-    .header .title {
-        font-size: 4em;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .header .title {
-        font-size: 3em;
-    }
-}
-
 /*--------------------BODY--------------------------*/
 
 .boder {
@@ -205,11 +193,63 @@ body {
 
     font-size: 1em;
     font-family: sans-serif;
-    text-align: start;
+    text-align: center;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
 
     color: #242323;
 
+}
+
+.boder .skills {
+    height: 100%;
+}
+
+.boder .skills .tabs {
+    position: relative;
+    width: min(calc(100% - 1rem), 600px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 0rem;
+}
+
+.boder .skills .tabs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.boder .skills .tabs::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    border-radius: 99px;
+}
+
+#SkillBox {
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+@media screen and (min-width: 651px) {
+    .header .title {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header .title {
+        font-size: 3em;
+    }
+    .tabs {
+        --tab-width: 70px;
+        --tab-font-size: .8rem;
+    }
 }
