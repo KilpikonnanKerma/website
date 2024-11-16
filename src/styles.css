@@ -29,24 +29,55 @@ body {
 	position: relative;
 	text-align: center;
 
+    max-height: 11em;
+
 	background-color: #767b91ff;
 }
 
 .header .title {
 	font-family: 'Halo Dek';
-	font-size: 5em;
 
 	padding: 0.15em;
 
 	color: #121724
 }
 
+@media screen and (min-width: 651px) {
+    .header .title {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header .title {
+        font-size: 3em;
+    }
+}
+
+/*--------------------BODY--------------------------*/
+
 .boder {
 	position: relative;
 	align-items: center;
 }
 
-.boder .button {
+.boder p {
+    margin-top: 5rem;
+    padding: 1em;
+
+    font-family: sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.boder .buttons {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2em;
+}
+
+.boder .border-button {
     background: #dee2d6ff;
     margin: 10px;
     padding: 15px 18px;
@@ -60,31 +91,32 @@ body {
     color: #dee2d6ff;
     cursor: crosshair;
 	border: none;
-    border-radius: 8px;
+    border-radius: 5px;
 
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-weight: 700;
+    font-family: sans-serif;
+    font-weight: bolder;
 
-	background-image: repeating-linear-gradient(45deg, #ffb8d1ff 12px 36px, #2a324bff 36px 60px);
+	background-image: repeating-linear-gradient(45deg, #121724 12px 36px, #2a324bff 36px 60px);
     color: #121724;
     background-size: 300% 150%;
 }
 
-.boder .button:hover {
+.boder .border-button:hover {
     background-position: 20% center;
 }
 
-.boder .button:active:after {
+.boder .border-button:active:after {
     /* width: 0; */
 	transition: 69ms ease-in-out;
 
-	width: 100%;
-	height: 100%;
+	width: 105%;
+	height: 105%;
 }
 
-.boder .button:after {
+.boder .border-button:after {
     content: "";
     position: absolute;
     width: calc(100% - 14px);
@@ -95,7 +127,7 @@ body {
     top: 50%;
     left: 50%;
     z-index: -1;
-    border-radius: 7px;
+    border-radius: 5px;
 
 	transition: 69ms ease-in-out;
 }
