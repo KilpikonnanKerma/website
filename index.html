@@ -11,7 +11,17 @@
 	</head>
 	<body>
 		<div id="header" class="header">
-			<h1 class="title">Welcome to my website!</h1>
+			<div id="navbar" class="navbar">
+				<div id="scroller-anchor"></div> 
+				<div id="nav">
+					 <ul class="clearfix">
+						 <li class="nav-btn active" data-row-id="row1"><a onclick="showProjects()">My Projects</a></li>
+						 <li class="nav-btn" data-row-id="row2"><a onclick="showAbout()">About me</a></li>
+						 <li class="nav-btn" data-row-id="row3"><a onclick="showSkills()">My skills</a></li>
+						 <li class="nav-btn" data-row-id="row4"><a onclick="">Other stuff</a></li>
+					 </ul>
+				 </div>
+			 </div>
 		</div>
 		<div class="boder">
 			<div class="start">
@@ -20,7 +30,7 @@
 					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
 					<button id="about-button" class="border-button" onclick="showAbout()">About me</button>
 					<button id="skills-button" class="border-button" onclick="showSkills()">My skills</button>
-					<button id="skills-button" class="border-button" onclick="showSkills()">Random stuff</button>
+					<button id="random-button" class="border-button" onclick="showSkills()">Other Random stuff</button>
 				</div>
 
 				<p class="cpright">Copyright (C) Nico Rajala 2024</p>
