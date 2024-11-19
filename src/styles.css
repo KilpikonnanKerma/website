@@ -62,7 +62,7 @@ body {
 	list-style:none;
 	color:#c4c3c6;
 	text-align:center;
-	cursor:crosshair;
+	/* cursor:crosshair; */
 	text-transform:uppercase;
 
 	font-size:12px;
@@ -78,8 +78,8 @@ body {
 }
 
 .header .nav-btn a {
-    height: 100%;
     width: 100%;
+    cursor: crosshair;
 }
 
 .header .nav-btn:first-child{
@@ -248,12 +248,15 @@ body {
 }
 
 .boder .skills .tabs {
+    display: flex;
     position: relative;
     width: min(calc(100% - 1rem), 600px);
     display: flex;
     flex-wrap: wrap;
     align-content: start;
     gap: 0rem;
+
+    justify-content:center;
 }
 
 .boder .skills .tabs::before {
@@ -270,6 +273,11 @@ body {
     border-radius: 99px;
 }
 
+.boder .skills .tab {
+    border-radius: 3px;
+    
+}
+
 #SkillBox {
     font-size: 1rem;
     font-family: sans-serif;
@@ -277,6 +285,41 @@ body {
     height: auto;
     margin: 40px auto;
     padding: 10px;
+}
+
+.boder .pie-chart {
+    width: 10em;
+    height: 10em;
+    left: 10rem;
+    background-image: conic-gradient(
+        #4e79a7 0% 30%,
+        #f28e2c 30% 50%,
+        #e15759 50% 65%,
+        #76b7b2 65% 70%,
+        #59a14f 70% 75%,
+        #202675 75% 95%,
+        #edc949 95% 100%
+    );
+    border-radius: 50%;
+}
+
+.boder .pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: .8em;
+	text-align: right;
+}
+
+.boder .pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
 }
 
 @media screen and (min-width: 651px) {

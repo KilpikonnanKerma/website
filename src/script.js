@@ -22,7 +22,7 @@ window.onscroll = function() {
 
 function showProjects() {
     document.getElementById('projects').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
+        block: 'center', behavior: 'smooth'});
 }
 
 function showAbout() {
@@ -32,7 +32,7 @@ function showAbout() {
 
 function showSkills() {
     document.getElementById('skills').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
+        block: 'center', behavior: 'smooth'});
 }
 
 function backToTop() {
