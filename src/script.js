@@ -27,7 +27,7 @@ function showProjects() {
 
 function showAbout() {
     document.getElementById('about').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
+        block: 'center', behavior: 'smooth'});
 }
 
 function showSkills() {
