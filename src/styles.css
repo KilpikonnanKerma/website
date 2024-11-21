@@ -71,7 +71,7 @@ body {
 
 	color:#c4c3c6;
 	
-	border-left:1px solid rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
 	box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5) ;
 	
 	text-shadow:rgba(0,0,0,0.8) 1px 1px 0px;
@@ -90,7 +90,7 @@ body {
 .header .nav-btn:hover, .header .nav-btn.active {
 	color:#FFF;
 	background:#444;
-	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5) ;
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
 }
 
 /*--------------------BODY--------------------------*/
