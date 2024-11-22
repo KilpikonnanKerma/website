@@ -32,7 +32,7 @@ function showAbout() {
 
 function showSkills() {
     document.getElementById('skills').scrollIntoView({
-        block: 'center', behavior: 'smooth'});
+        block: 'start', behavior: 'smooth'});
 }
 
 function backToTop() {
