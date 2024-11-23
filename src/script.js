@@ -32,10 +32,10 @@ function showAbout() {
 
 function showSkills() {
     document.getElementById('skills').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
+        block: 'end', behavior: 'smooth'});
 }
 
 function backToTop() {
-    document.getElementById('header').scrollIntoView({
-        block: 'end', behavior: 'smooth'})
+    window.scrollTo({
+        top: 0, behavior: 'smooth'})
 }

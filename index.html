@@ -23,10 +23,10 @@
 				</div>
 			 </div>
 		</div>
-		<div class="boder">
+		<div class="boder" id="boder">
 			<div class="start">
-				<p id="intro">Hey! My name is Nico, I am a computer science student at OSAO.</p>
-				<p>What would you like to know about me?</p>
+				<p id="intro">Hey! My name is Nico.</p>
+				<p>I am a computer science student at OSAO.</p>
 				<div class="buttons">
 					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
 					<button id="about-button" class="border-button" onclick="showAbout()">More about me</button>
@@ -35,7 +35,9 @@
 				</div>
 
 				<p class="cpright">Copyright (C) Nico Rajala 2024</p>
-
+				<div class="bottom-thing">
+					<p>You can also scroll</p>
+				</div>
 			</div>
 
 			<div id="projects" class="projects">
@@ -47,13 +49,10 @@
 
 			<div id="about" class="about">
 				<p class="name">Nico Rajala</p>
-				<p class="introduction">
-					I'm a student at OSAO.
-				</p>
 				<p class="background">
-					I have been doing all kinds of computer shit since I was an infant. And I have gathered a pretty big catalog of random skills along the way.
+					I have been interested about programming and computers from a young age. 
 				</p>
-				<p>My hobbies are making games/websites/other stuff and playing guitar. I also REALLY like to listen to music. I can't get through a day without listening to some good riffs.</p>
+				<p>My hobbies are making games/websites/other stuff and playing guitar.</p>
 				<p>That's about it!</p>
 				<button class="oth-button" onclick="showSkills()">My skills</button>
 				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
@@ -62,22 +61,39 @@
 			<div class="space"></div>
 
 			<div id="skills" class="skills">
-				<div class="langs" id="skill-box">
-					<p class="title">Programming languages I know how to use:</p>
-					<summary>
-						<p>C</p>
-						<p>C++</p>
-						<p>C#</p>
-						<p>Python</p>
-						<p>Java</p>
-						<p>And little amounts of many other languages.</p>
-					</summary>
-				</div>
-				<div class="softs" id="skill-box">
-
-				</div>
-				<div class="other" id="skill-box">
-
+				<p class="skills-title">My skills</p>
+				<div class="skill-boxes">
+					<div class="langs" id="skill-box">
+						<p class="title">Languages</p>
+						<ul>
+							<li>C</li>
+							<li>C++</li>
+							<li>C#</li>
+							<li>Python</li>
+							<li>Java</li>
+							<li>And little amounts of many other languages.</li>
+						</ul>
+					</div>
+					<div class="softs" id="skill-box">
+						<p class="title">Softwares & OSs</p>
+						<ul>
+							<li>Unity 5+</li>
+							<li>Godot 4</li>
+							<li>Unreal Engine 4/5</li>
+							<li>DaVinci Resolve</li>
+							<li>Visual Studio & VSCode</li>
+							<li>Vim</li>
+							<li>Windows XP-11</li>
+							<li>Arch and Debian based Linux distros.</li>
+						</ul>
+					</div>
+					<div class="other" id="skill-box">
+						<p class="title">Other skills</p>
+						<ul>
+							<li>Great knowledge about computers</li>
+							<li>I can play Master of Puppets at -86 Toronto pace.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
