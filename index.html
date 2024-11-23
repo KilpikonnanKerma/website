@@ -15,20 +15,21 @@
 				<div id="scroller-anchor"></div> 
 				<div id="nav">
 					 <ul class="clearfix">
-						 <li class="nav-btn active" data-row-id="row1"><a onclick="showProjects()">My Projects</a></li>
-						 <li class="nav-btn" data-row-id="row2"><a onclick="showAbout()">About me</a></li>
-						 <li class="nav-btn" data-row-id="row3"><a onclick="showSkills()">My skills</a></li>
-						 <li class="nav-btn" data-row-id="row4"><a onclick="">Other stuff</a></li>
+						 <li class="nav-btn active" data-row-id="row1" onclick="showProjects()">My Projects</li>
+						 <li class="nav-btn" data-row-id="row2" onclick="showAbout()">About me</li>
+						 <li class="nav-btn" data-row-id="row3" onclick="showSkills()">My skills</li>
+						 <li class="nav-btn" data-row-id="row4">Other stuff</li>
 					 </ul>
 				</div>
 			 </div>
 		</div>
 		<div class="boder">
 			<div class="start">
+				<p id="intro">Hey! My name is Nico, I am a computer science student at OSAO.</p>
 				<p>What would you like to know about me?</p>
 				<div class="buttons">
 					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
-					<button id="about-button" class="border-button" onclick="showAbout()">About me</button>
+					<button id="about-button" class="border-button" onclick="showAbout()">More about me</button>
 					<button id="skills-button" class="border-button" onclick="showSkills()">My skills</button>
 					<button id="random-button" class="border-button" onclick="showSkills()">Other Random stuff</button>
 				</div>
@@ -61,7 +62,7 @@
 			<div class="space"></div>
 
 			<div id="skills" class="skills">
-				<div class="langs">
+				<div class="langs" id="skill-box">
 					<p class="title">Programming languages I know how to use:</p>
 					<summary>
 						<p>C</p>
@@ -72,14 +73,14 @@
 						<p>And little amounts of many other languages.</p>
 					</summary>
 				</div>
-				<div class="softs">
+				<div class="softs" id="skill-box">
 
 				</div>
-				<div class="other">
+				<div class="other" id="skill-box">
 
 				</div>
-				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 			</div>
+			<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 		</div>
 	</body>
 </html>
