@@ -22,7 +22,7 @@ window.onscroll = function() {
 
 function showProjects() {
     document.getElementById('projects').scrollIntoView({
-        block: 'center', behavior: 'smooth'});
+        block: 'start', behavior: 'smooth'});
 }
 
 function showAbout() {
