@@ -21,7 +21,7 @@ window.onscroll = function() {
 }
 
 function showProjects() {
-    document.getElementById('projects').scrollIntoView({
+    document.getElementById('projects-holder').scrollIntoView({
         block: 'start', behavior: 'smooth'});
 }
 
@@ -38,4 +38,12 @@ function showSkills() {
 function backToTop() {
     window.scrollTo({
         top: 0, behavior: 'smooth'})
+}
+
+function openProjectInANewTab(file_path) {
+    window.open(file_path);
+}
+
+function openProject(file_path) {
+    window.location.href = file_path;
 }

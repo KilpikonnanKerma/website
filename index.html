@@ -15,7 +15,7 @@
 				<div id="scroller-anchor"></div> 
 				<div id="nav">
 					 <ul class="clearfix">
-						 <li class="nav-btn active" data-row-id="row1" onclick="showProjects()">My Projects</li>
+						 <li class="nav-btn" data-row-id="row1" onclick="showProjects()">My Projects</li>
 						 <li class="nav-btn" data-row-id="row2" onclick="showAbout()">About me</li>
 						 <li class="nav-btn" data-row-id="row3" onclick="showSkills()">My skills</li>
 						 <li class="nav-btn" data-row-id="row4">Other stuff</li>
@@ -31,44 +31,52 @@
 					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
 					<button id="about-button" class="border-button" onclick="showAbout()">More about me</button>
 					<button id="skills-button" class="border-button" onclick="showSkills()">My skills</button>
-					<button id="random-button" class="border-button" onclick="showSkills()">Other Random stuff</button>
+					<button id="random-button" class="border-button" onclick="">Other Random stuff</button>
 				</div>
 
 				<p class="cpright">Copyright (C) Nico Rajala 2024</p>
 			</div>
 
-			<p class="projects-title">My projects</p>
-			<div id="projects" class="projects">
-				<div id="project">
-					<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-					<p id="title">Cursed to Consume (2024)</p>
-					<p>School project platformer made in Godot 4.</p>
+			<div id="projects-holder">
+				<p id="title">My projects</p>
+				<div id="projects" class="projects">
+					<div id="project" onclick="">
+						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+						<p id="date">(2024)</p>
+						<p id="game-title">Cursed to Consume</p>
+						<p>School project platformer made in Godot 4.</p>
+					</div>
+					<div id="project" onclick="">
+						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+						<p id="date">(2023-2024)</p>
+						<p id="game-title">nomoottori</p>
+						<p>Game/Graphics engine written in C and OpenGL.</p>
+					</div>
+					<div id="project" onclick="">
+						<img id="image" src="res/pictures/Kuva1.png">
+						<p id="date">(2020-2021)</p>
+						<p id="game-title">The Year Three Thousand</p>
+						<p>Futuristic FPS-Shooter with jetpacks and laser guns.</p>
+					</div>
+					<div id="project" onclick="">
+						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+						<p id="date">(2019-2023)</p>
+						<p id="game-title">KodeOS</p>
+						<p>32bit operating system written in assembly.</p>
+					</div>
+					<div id="project" onclick="openProject('src/es_sim.html')">
+						<img id="image" src="res/pictures/ES simulator def icon.png">
+						<p id="date">(2019)</p>
+						<p id="game-title">ES Simulator</p>
+						<p>Shitty game I made in fifth grade.</p>
+					</div>
 				</div>
-				<div id="project">
-					<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-					<p id="title">nomoottori (2023-2024)</p>
-					<p>Game/Graphics engine written in C and OpenGL.</p>
-				</div>
-				<div id="project">
-					<img id="image" src="res/pictures/Kuva1.png">
-					<p id="title">The Year Three Thousand (2020-2021)</p>
-					<p>Futuristic FPS-Shooter with jetpacks and laser guns.</p>
-				</div>
-				<div id="project">
-					<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-					<p id="title">KodeOS (2019-2023)</p>
-					<p>32bit operating system written in assembly.</p>
-				</div>
-				<div id="project">
-					<img id="image" src="res/pictures/ES simulator def icon.png">
-					<p id="title">ES Simulator (2019)</p>
-					<p>Shitty game I made in fifth grade.</p>
-				</div>
+				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 			</div>
-			<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 
 			<div class="space"></div>
 
+			<p id="title">About me</p>
 			<div id="about" class="about">
 				<p class="name">Nico Rajala</p>
 				<p class="background">
@@ -76,14 +84,12 @@
 				</p>
 				<p>My hobbies are making games/websites/other stuff and playing guitar.</p>
 				<p>That's about it!</p>
-				<button class="oth-button" onclick="showSkills()">My skills</button>
-				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
+				<!-- <button class="oth-button" onclick="showSkills()">My skills</button>
+				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button> -->
 			</div>
 
-			<div class="space"></div>
-
 			<div id="skills" class="skills">
-				<p class="skills-title">My skills</p>
+				<p id="title">My skills</p>
 				<div class="skill-boxes">
 					<div class="langs" id="skill-box">
 						<p class="title">Languages</p>
