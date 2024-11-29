@@ -7,6 +7,10 @@ body {
     background-color: #c4c3c6;
 }
 
+.space {
+    height: 50%;
+}
+
 .header #navbar{
 	background-color:#2c2b2b;
 	box-shadow:0px 1px 5px rgba(0,0,0,0.4);
@@ -208,7 +212,9 @@ body {
     /* margin-top: 4rem; */
 
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
+
+    color: #242323;
 
     /* margin-left: 10%; */
     /* margin-right: 10%; */
@@ -253,4 +259,31 @@ body {
 #download-btn p {
     float: right;
     font-family: sans-serif;
+}
+
+.videos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 50%);
+
+    margin-top: 10rem;
+}
+
+.videos p {
+    float: right;
+
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+    margin: auto;
+
+    max-width: 50%;
+}
+
+#video {
+    width: 100%;
+
+    margin: 1.5rem;
+
+    border-radius: 3px;
 }

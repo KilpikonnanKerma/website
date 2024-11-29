@@ -1,9 +1,10 @@
 /*
 #585858
 #2c2b2b
-#242323 - teksti
+#242323 - teksti, myös #d8d8d8
 #c4c3c6 - tausta
 #242c25
+#0a0a2a 
 */
 
 @font-face {
@@ -23,7 +24,7 @@
 }
 
 body {
-	background-color: #c4c3c6;
+	background-color: #0a0a2a;
 }
 
 .header #navbar{
@@ -52,7 +53,6 @@ body {
 	float:left;
 	padding:24px 0;
 	list-style:none;
-	color:#c4c3c6;
 	text-align:center;
 	/* cursor:crosshair; */
 	text-transform:uppercase;
@@ -61,12 +61,16 @@ body {
     font-family: sans-serif;
     font-weight: 700;
 
-	color:#c4c3c6;
+	color:#d8d8d8;
 	
 	border-left: 1px solid rgba(255,255,255,0.2);
-	box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5) ;
+	box-shadow: inset 1px rgba(0,0,0,0.5);
+
+    border-radius: 0 0 3px 3px;
 	
 	text-shadow:rgba(0,0,0,0.8) 1px 1px 0px;
+
+    transition: .1s;
 }
 
 .header .nav-btn:first-child{
@@ -75,8 +79,8 @@ body {
 }
 
 .header .nav-btn:hover {
-	color:#FFF;
-	background:#444;
+	color:#d8d8d8;
+	background:#242323;
     cursor: crosshair;
 	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
 }
@@ -102,30 +106,30 @@ body {
 
     padding: 8px;
 
-    background-color: #2c2b2b;
-    color: #c4c3c6;
+    background-color: #242323;
+    color: #d8d8d8;
 }
 
 #intro {
-    margin-top: 3rem;
+    margin-top: 15rem;
 
     font-family: sans-serif;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: 600;
+
+    color: #d8d8d8;
 }
 
 .boder .start p {
     padding: 1em;
 
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 
     margin-top: -1.7rem;
-}
 
-.boder .start .cpright {
-    margin-top: 4rem;
-    font-size: .7em;
+    color: #c4c3c6;
 }
 
 .boder .buttons {
@@ -222,7 +226,7 @@ body {
 }
 
 .boder .space {
-    height: 90%;
+    height: 50%;
 }
 
 .projects {
@@ -235,19 +239,6 @@ body {
     grid-template-rows: auto;
 
     margin-bottom: 5rem;
-}
-
-.projects-title {
-    font-size: 2rem;
-    font-family: sans-serif;
-
-    text-align: center;
-    margin-bottom: -3rem;
-
-    padding: 10px;
-
-    background-color: #2c2b2b;
-    color: #d8d8d8;
 }
 
 #project {
@@ -264,21 +255,33 @@ body {
     max-width: 25rem;
 
     cursor: crosshair;
-    transition: .2s;
+    transition: .1s;
 
     font-family: sans-serif;
+
+    background-color: #2c2b2b;
+    color: #c4c3c6;
+}
+
+.hide {
+    display: none;
+}
+
+.show:hover ~ .hide {
+    display:contents;
 }
 
 #project:hover {
-    border: 5px solid #2c2b2b;
+    border: 5px solid #585858;
 }
 
 #project #image {
     width: 100%;
+    border-radius: 3px 3px 0 0;
 }
 
 #project #game-title {
-    background-color: #2c2b2b;
+    background-color: #242323;
     color: #d8d8d8;
     
     padding: 5px;
@@ -297,9 +300,11 @@ body {
 @media screen and (min-width: 951px) {
     .projects {
         grid-template-columns: repeat(4, 25%);
+
+        margin: 0 1rem 0 1rem;
     }
     #project {
-        margin-left: 3rem;
+        /* margin-left: 3rem; */
         margin-right: 3rem;
         margin-top: 3rem;
 
@@ -307,7 +312,7 @@ body {
     }
 
     #project #image {
-        height: 13rem;
+        height: 14rem;
     }
 }
 
@@ -324,10 +329,20 @@ body {
     }
 }
 
+@media screen and (max-width: 700px) {
+    #project {
+        margin-left: .5rem;
+        margin-top: 1rem;
+
+        max-width: 15rem;
+    }
+}
+
 .about {
-    background-color: #c4c3c6;
     height: 100%;
     width: 100%;
+
+    margin-top: 5rem;
 
     display: relative;
     text-align: center;
@@ -337,19 +352,21 @@ body {
     padding: 1em;
     font-size: 2.2em;
     text-align: center;
+
+    color: #d8d8d8;
 }
 
 .boder .about p {
     padding: 5px;
 
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: sans-serif;
     text-align: center;
 
-    margin-left: 30%;
-    margin-right: 30%;
+    color: #c4c3c6;
 
-    color: #242323;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 
@@ -372,7 +389,7 @@ body {
 
     padding: 10px;
 
-    background-color: #2c2b2b;
+    background-color: #242323;
     color: #c4c3c6;
 }
 
@@ -401,16 +418,17 @@ body {
     margin-left: .5rem;
     margin-right: 0.5rem;
 
-    color: #242323;
+    background-color: #2c2b2b;
+    color: #c4c3c6;
     
-    border: 2px solid #2c2b2b;
+    border: 2px solid #242323;
     border-radius: 3px;
     font-family: sans-serif;
 }
 
 #skill-box p {
-    background-color: #2c2b2b;
-    color: #c4c3c6;
+    background-color: #242323;
+    color: #d8d8d8;
 }
 
 .skills ul {
@@ -438,4 +456,21 @@ body {
         --tab-width: 70px;
         --tab-font-size: .8rem;
     }
+}
+
+.footer {
+    display: flex;
+    background-color: #2c2b2b;
+
+    height: 5rem;
+}
+
+.footer .cpright {
+    font-family: sans-serif;
+    font-size: .7em;
+
+    color: #d8d8d8;
+
+    margin: auto 0;
+    margin-left: 2.5rem;
 }

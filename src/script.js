@@ -1,6 +1,5 @@
 function Start() {
-    //disableScroll();
-    document.getElementById("navbar").style.top = "-100px";
+    //document.getElementById("navbar").style.top = "-100px";
 }
 
 window.onload = function() {document.getElementById("navbar").style.top = "-100px"; }
@@ -15,9 +14,9 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 
-    if (window.scrollY <= 0) {
-        document.getElementById("navbar").style.top = "-100px";
-    }
+    // if (window.scrollY <= 0) {
+    //     document.getElementById("navbar").style.top = "-100px";
+    // }
 }
 
 function showProjects() {

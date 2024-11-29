@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Nicon nettisivu</title>
 		<link rel="stylesheet" href="src/styles.css">
 		<script src="src/script.js"></script>
@@ -27,58 +28,17 @@
 			<div class="start">
 				<p id="intro">Hey! My name is Nico.</p>
 				<p>I am a computer science student at OSAO.</p>
-				<div class="buttons">
+				<!-- <div class="buttons">
 					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
 					<button id="about-button" class="border-button" onclick="showAbout()">More about me</button>
 					<button id="skills-button" class="border-button" onclick="showSkills()">My skills</button>
 					<button id="random-button" class="border-button" onclick="">Other Random stuff</button>
-				</div>
-
-				<p class="cpright">Copyright (C) Nico Rajala 2024</p>
+				</div> -->
 			</div>
 
-			<div id="projects-holder">
-				<p id="title">My projects</p>
-				<div id="projects" class="projects">
-					<div id="project" onclick="">
-						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-						<p id="date">2024</p>
-						<p id="game-title">Cursed to Consume</p>
-						<p>School project platformer made in Godot 4.</p>
-					</div>
-					<div id="project" onclick="">
-						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-						<p id="date">2023-2024</p>
-						<p id="game-title">nomoottori</p>
-						<p>Game/Graphics engine written in C and OpenGL.</p>
-					</div>
-					<div id="project" onclick="">
-						<img id="image" src="res/pictures/Kuva1.png">
-						<p id="date">2020-2021</p>
-						<p id="game-title">The Year Three Thousand</p>
-						<p>Futuristic FPS-Shooter with jetpacks and laser guns.</p>
-					</div>
-					<div id="project" onclick="">
-						<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
-						<p id="date">2019-2023</p>
-						<p id="game-title">KodeOS</p>
-						<p>32bit operating system written in assembly.</p>
-					</div>
-					<div id="project" onclick="openProject('src/es_sim.html')">
-						<img id="image" src="res/pictures/ES simulator def icon.png">
-						<p id="date">2019</p>
-						<p id="game-title">ES Simulator</p>
-						<p>Shitty game I made in fifth grade.</p>
-					</div>
-				</div>
-				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
-			</div>
-
-			<div class="space"></div>
-
-			<!-- <p id="title">About me</p> -->
+			<p id="title">About me</p>
 			<div id="about" class="about">
-				<p class="name">Nico Rajala</p>
+				<!-- <p class="name">Nico Rajala</p> -->
 				<p class="background">
 					I have been interested about programming and computers from a young age. 
 				</p>
@@ -124,7 +84,79 @@
 					</div>
 				</div>
 			</div>
-			<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
+
+			<div class="space"></div>
+
+			<div id="projects-holder">
+				<p id="title">My projects</p>
+				<div id="projects" class="projects">
+					<div id="project" class="project" onclick="">
+						<div class="show">
+							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<p id="date">2024</p>
+							<p id="game-title">Portfolio website</p>
+						</div>
+						<div class="hide">
+							<p>The website you are currently on.</p>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="">
+						<div class="show">
+							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<p id="date">2024</p>
+							<p id="game-title">Cursed to Consume</p>
+						</div>
+						<div class="hide">
+							<p>School project platformer made in Godot 4.</p>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="">
+						<div class="show">
+							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<p id="date">2023-2024</p>
+							<p id="game-title">nomoottori</p>
+						</div>
+						<div class="hide">
+							<p>Game/Graphics engine written in C and OpenGL.</p>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="">
+						<div class="show">
+							<img id="image" src="res/pictures/Kuva1.png">
+							<p id="date">2020-2021</p>
+							<p id="game-title">The Year Three Thousand</p>
+						</div>
+						<div class="hide">
+							<p>Futuristic Multiplayer FPS-Shooter with jetpacks and laser guns.</p>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="">
+						<div class="show">
+							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<p id="date">2019-2023</p>
+							<p id="game-title">KodeOS</p>
+						</div>
+						<div class="hide">
+							<p>32bit operating system written in assembly.</p>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('src/es_sim.html')">
+						<div class="show">
+							<img id="image" src="res/pictures/ES simulator def icon.png">
+							<p id="date">2019</p>
+							<p id="game-title">ES Simulator</p>
+						</div>
+						<div class="hide">
+							<p>Shitty game I made in fifth grade.</p>
+						</div>
+					</div>
+				</div>
+				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
+			</div>
+			<div class="space"></div>
+		</div>
+		<div class="footer">
+			<p class="cpright">&#169; Nico Rajala</p>
 		</div>
 	</body>
 </html>
