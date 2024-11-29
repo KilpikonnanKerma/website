@@ -2,45 +2,50 @@
     <head>
         <title>ES Simulator</title>
         <link rel="stylesheet" href="project_general.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="projects.js"></script>
     </head>
     <body>
-        <div id="header" class="header">
-			<div id="navbar" class="navbar">
-				<div id="scroller-anchor"></div> 
-				<div id="nav">
-					 <ul class="clearfix">
-						 <li class="nav-btn" data-row-id="row1" onclick="showProjects()">My Projects</li>
-						 <li class="nav-btn" data-row-id="row2" onclick="showAbout()">About me</li>
-						 <li class="nav-btn" data-row-id="row3" onclick="showSkills()">My skills</li>
-						 <li class="nav-btn" data-row-id="row4">Other stuff</li>
-					 </ul>
+      	<!-- <div id="header" class="header">
+        <div id="navbar" class="navbar">
+          <div id="scroller-anchor"></div> 
+          <div id="nav">
+            <ul class="clearfix">
+              <li class="nav-btn" data-row-id="row1" onclick="showProjects()">My Projects</li>
+              <li class="nav-btn" data-row-id="row2" onclick="showAbout()">About me</li>
+              <li class="nav-btn" data-row-id="row3" onclick="showSkills()">My skills</li>
+              <li class="nav-btn" data-row-id="row4">Other stuff</li>
+            </ul>
+          </div>
+        </div>
+		  </div> -->
+
+		<button class="oth-button" onclick="back()">Back</button>
+		
+		<div class="project">
+			<div class="slideshow-container">
+				<div class="slide fade activus">
+					<div class="numbertext">1 / 2</div>
+					<img src="../res/pictures/ES simulator def icon.png">
 				</div>
-			 </div>
+				
+				<div class="slide fade">
+					<div class="numbertext">2 / 2</div>
+					<img src="../res/pictures/Mainos es smltr.png">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<div class="about-project">
+				<p class="about-project-text">
+					ES Simulator is a game I made in fifth grade. I made it as a joke using Unity 2017.
+					In the game you drink "ES" which is actually cola because I couldn't find any 
+					energy drink models on the Unity Asset store.
+				</p>
+				<a href="https://gamejolt.com/games/es_simulator/472663" id="download-btn" class="fa fa-download">&nbsp<p>Download</p></a>
+				<br>
+			</div>
 		</div>
-
-        <br><br><br><br><br><br><br>
-
-        <div class="slideshow-container">
-
-            <div class="slide fade active">
-              <div class="numbertext">1 / 2</div>
-              <img src="../res/pictures/ES simulator def icon.png" style="width:100%">
-            </div>
-          
-            <div class="slide fade">
-              <div class="numbertext">2 / 2</div>
-              <img src="../res/pictures/Mainos es smltr.png" style="width:100%">
-            </div>
-          
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
     </body>
 </html>
