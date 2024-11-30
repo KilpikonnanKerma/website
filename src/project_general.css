@@ -4,73 +4,16 @@
 }
 
 body {
-    background-color: #c4c3c6;
+    background-color: #2c2b2b;
 }
 
 .space {
     height: 50%;
 }
 
-.header #navbar{
-	background-color:#2c2b2b;
-	box-shadow:0px 1px 5px rgba(0,0,0,0.4);
-	height:60px;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:100;
-
-    transition: .3s;
-}
-
-.header #nav{
-	height:60px;
-	width:400px;
-	margin: 0 auto;
-}
-
-.header #nav ul{position:relative;}
-
-.header .nav-btn{
-	width:99px;
-	float:left;
-	padding:24px 0;
-	list-style:none;
-	color:#c4c3c6;
-	text-align:center;
-	/* cursor:crosshair; */
-	text-transform:uppercase;
-
-	font-size:12px;
-    font-family: sans-serif;
-    font-weight: 700;
-
-	color:#c4c3c6;
-	
-	border-left: 1px solid rgba(255,255,255,0.2);
-	box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5) ;
-	
-	text-shadow:rgba(0,0,0,0.8) 1px 1px 0px;
-}
-
-.header .nav-btn:first-child{
-	border:none;
-	box-shadow: none;
-}
-
-.header .nav-btn:hover {
-	color:#FFF;
-	background:#444;
-    cursor: crosshair;
-	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
-}
-
 /*-----------------------------------------------------------------------*/
 
 .oth-button {
-    position: absolute;
-
     padding: 6px;
     /* margin: 0.3em; */
 
@@ -92,8 +35,6 @@ body {
     text-transform: uppercase;
 
     transition: .3s;
-
-    bottom: .1px;
 
     margin: .5rem;
 }
@@ -122,7 +63,6 @@ body {
 
 .slide {
     display: none;
-    background-color: #585858;
     padding: 1rem;
 
     box-shadow: 0px 2px #2c2b2b;
@@ -198,7 +138,7 @@ body {
 }
 
 .about-project {
-    border: 2px solid #2c2b2b;
+    border: 2px solid #d8d8d8;
     border-radius: 3px;
 
     margin-top: 4rem;
@@ -214,7 +154,7 @@ body {
     font-family: sans-serif;
     font-size: 1.2em;
 
-    color: #242323;
+    color: #c4c3c6;
 
     /* margin-left: 10%; */
     /* margin-right: 10%; */
@@ -253,7 +193,7 @@ body {
 }
 
 #download-btn:hover {
-    background-color: #2c2b2b;
+    background-color: #242424;
 }
 
 #download-btn p {
@@ -274,6 +214,8 @@ body {
 
     font-family: sans-serif;
     font-size: 1.2rem;
+
+    color: #c4c3c6;
 
     margin: auto;
 

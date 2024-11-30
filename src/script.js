@@ -20,18 +20,18 @@ window.onscroll = function() {
 }
 
 function showProjects() {
-    document.getElementById('projects-holder').scrollIntoView({
+    document.getElementById('projects-title').scrollIntoView({
         block: 'start', behavior: 'smooth'});
 }
 
 function showAbout() {
-    document.getElementById('about').scrollIntoView({
-        block: 'center', behavior: 'smooth'});
+    document.getElementById('about-title').scrollIntoView({
+        block: 'start', behavior: 'smooth'});
 }
 
 function showSkills() {
-    document.getElementById('skills').scrollIntoView({
-        block: 'end', behavior: 'smooth'});
+    document.getElementById('skills-title').scrollIntoView({
+        block: 'start', behavior: 'smooth'});
 }
 
 function backToTop() {

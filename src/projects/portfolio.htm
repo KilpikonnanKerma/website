@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>ES Simulator</title>
+        <link rel="stylesheet" href="/src/project_general.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/src/projects.js"></script>
+    </head>
+    <body>
+		<button class="oth-button" onclick="back()">Back</button>
+		
+		<div class="project">
+			<div class="slideshow-container">
+                <style>
+					* {
+						overflow: hidden;
+					}
+
+					.slide {background-color: #0a0a2a;}
+				</style>
+				<div class="slide fade activus">
+					<div class="numbertext">1 / 1</div>
+					<img src="/res/pictures/portfolio.png">
+				</div>				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<div class="about-project">
+				<p class="about-project-text">
+					This is the website you are currently on. 
+                    It was made as a school project and for 
+                    future possible employment perhaps(?). 
+                    The website is written in pure html, css and javascript 
+                    and does not use any fancy tools like React.
+				</p>
+			</div>
+			<div class="space"></div>
+		</div>
+    </body>
+</html>

@@ -16,9 +16,9 @@
 				<div id="scroller-anchor"></div> 
 				<div id="nav">
 					 <ul class="clearfix">
-						 <li class="nav-btn" data-row-id="row1" onclick="showProjects()">My Projects</li>
-						 <li class="nav-btn" data-row-id="row2" onclick="showAbout()">About me</li>
-						 <li class="nav-btn" data-row-id="row3" onclick="showSkills()">My skills</li>
+						<li class="nav-btn" data-row-id="row1" onclick="showAbout()">About me</li>
+						<li class="nav-btn" data-row-id="row2" onclick="showSkills()">My skills</li>
+						 <li class="nav-btn" data-row-id="row3" onclick="showProjects()">My Projects</li>
 						 <li class="nav-btn" data-row-id="row4">Other stuff</li>
 					 </ul>
 				</div>
@@ -36,7 +36,7 @@
 				</div> -->
 			</div>
 
-			<p id="title">About me</p>
+			<p class="part-title" id="about-title">About me</p>
 			<div id="about" class="about">
 				<!-- <p class="name">Nico Rajala</p> -->
 				<p class="background">
@@ -49,7 +49,7 @@
 			</div>
 
 			<div id="skills" class="skills">
-				<p id="title">My skills</p>
+				<p class="part-title" id="skills-title">My skills</p>
 				<div class="skill-boxes">
 					<div class="langs" id="skill-box">
 						<p class="title">Languages</p>
@@ -59,27 +59,30 @@
 							<li>C#</li>
 							<li>Python</li>
 							<li>Java</li>
+							<li>HTML/CSS/JS</li>
 							<li>And little amounts of many other languages.</li>
 						</ul>
 					</div>
 					<div class="softs" id="skill-box">
-						<p class="title">Softwares & OSs</p>
+						<p class="title">Softwares & Tools</p>
 						<ul>
+							<li>Git and Github</li>
 							<li>Unity 5+</li>
 							<li>Godot 4</li>
 							<li>Unreal Engine 4/5</li>
-							<li>DaVinci Resolve</li>
 							<li>Visual Studio & VSCode</li>
-							<li>Vim</li>
-							<li>Windows XP-11</li>
-							<li>Arch and Debian based Linux distros.</li>
+							<li>JetBrains IDEs</li>
+							<li>DaVinci Resolve</li>
+							<li>Some Adobe tools (e.g. Photoshop, XD)</li>
+							<li>Microsoft Office tools.</li>
 						</ul>
 					</div>
 					<div class="other" id="skill-box">
 						<p class="title">Other skills</p>
 						<ul>
-							<li>Great knowledge about computers</li>
+							<li>Great knowledge about computers.</li>
 							<li>I can play Master of Puppets at -86 Toronto pace.</li>
+							<li>I'm a pretty fast learner.</li>
 						</ul>
 					</div>
 				</div>
@@ -88,11 +91,11 @@
 			<div class="space"></div>
 
 			<div id="projects-holder">
-				<p id="title">My projects</p>
+				<p class="part-title" id="projects-title">My projects</p>
 				<div id="projects" class="projects">
-					<div id="project" class="project" onclick="">
+					<div id="project" class="project" onclick="openProject('src/projects/portfolio.htm')">
 						<div class="show">
-							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<img id="image" src="res/pictures/portfolio.png">
 							<p id="date">2024</p>
 							<p id="game-title">Portfolio website</p>
 						</div>
@@ -100,9 +103,9 @@
 							<p>The website you are currently on.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="">
+					<div id="project" class="project" onclick="openProject('/src/projects/ctc.htm')">
 						<div class="show">
-							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<img id="image" src="/res/pictures/ctc.png">
 							<p id="date">2024</p>
 							<p id="game-title">Cursed to Consume</p>
 						</div>
@@ -110,7 +113,7 @@
 							<p>School project platformer made in Godot 4.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="">
+					<div id="project" class="project" onclick="openProject('/src/projects/nomo.htm')">
 						<div class="show">
 							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
 							<p id="date">2023-2024</p>
@@ -140,7 +143,7 @@
 							<p>32bit operating system written in assembly.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/es_sim.html')">
+					<div id="project" class="project" onclick="openProject('src/projects/es_sim.html')">
 						<div class="show">
 							<img id="image" src="res/pictures/ES simulator def icon.png">
 							<p id="date">2019</p>
@@ -151,7 +154,6 @@
 						</div>
 					</div>
 				</div>
-				<button id="top-btn" class="oth-button" onclick="backToTop()">Back to top</button>
 			</div>
 			<div class="space"></div>
 		</div>
