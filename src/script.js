@@ -34,6 +34,12 @@ function showSkills() {
         block: 'start', behavior: 'smooth'});
 }
 
+function showContact() {
+    document.getElementById('footer').scrollIntoView({
+        block: 'start', behavior: 'smooth'
+    });
+}
+
 function backToTop() {
     window.scrollTo({
         top: 0, behavior: 'smooth'})

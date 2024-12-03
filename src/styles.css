@@ -466,11 +466,17 @@ body {
 }
 
 .footer .cpright {
+    margin: auto 0;
+    margin-left: 2.5rem;
+}
+
+.footer p {
     font-family: sans-serif;
     font-size: .7em;
 
     color: #d8d8d8;
+}
 
-    margin: auto 0;
-    margin-left: 2.5rem;
+#email {
+    margin: auto;
 }
