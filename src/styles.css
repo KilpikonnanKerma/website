@@ -446,8 +446,15 @@ body {
     color: #d8d8d8;
 }
 
-#email {
+.contact {
     margin: auto;
+}
+
+#text {
+    margin: auto;
+
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btn3 {
