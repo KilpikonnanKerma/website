@@ -459,6 +459,9 @@ body {
 
 .btn3 {
     position: relative;
+
+    margin: auto;
+
     width: 2.5em;
     height: 2.5em;
     outline: none;
