@@ -24,7 +24,7 @@
     --element-bg-color: #c4c3c6;
     --text-color: #2c2b2b;
     --text2-color: #242323;
-    --shadow-color: #d4d4d4;
+    --shadow-color: #b6b5b5;
 
     --nav-bar-border: rgba(0,0,0,0.2);
     --nav-bar-text-shadow: rgba(180,180,180,0.8);
@@ -137,7 +137,7 @@ body {
 
     border-radius: 3px;
 
-    background-color: var(--element-bg-color);
+    background-color: var(--shadow-color);
     color: var(--text-color);
 
     box-shadow: 
@@ -175,7 +175,7 @@ body {
     margin-top: 13em;
 }
 
-.boder .border-button {
+/* .boder .border-button {
     background: var(--text2-color);
     margin: 10px;
     padding: 15px 18px;
@@ -207,7 +207,7 @@ body {
 }
 
 .boder .border-button:active:after {
-    /* width: 0; */
+    /* width: 0; *
 	transition: 69ms ease-in-out;
 
 	width: 110%;
@@ -230,7 +230,7 @@ body {
     border-radius: 3px;
 
 	transition: 69ms ease-in-out;
-}
+} */
 
 .oth-button {
     padding: 6px;
@@ -278,6 +278,8 @@ body {
 
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: auto;
+
+    transform: .3s;
 
     /* margin-bottom: 15rem; */
 }
@@ -339,8 +341,8 @@ body {
 }
 
 #project #game-title {
-    background-color: #242323;
-    color: #d8d8d8;
+    background-color: var(--shadow-color);
+    color: var(--text-color);
     
     padding: 5px;
 }
@@ -348,7 +350,7 @@ body {
 #project #date {
     float:right;
 
-    color: #c4c3c6;
+    color: var(--text2-color);
 }
 
 #project p {
@@ -457,10 +459,10 @@ body {
     margin-left: .5rem;
     margin-right: 0.5rem;
 
-    background-color: #2c2b2b;
-    color: #c4c3c6;
+    background-color: var(--element-bg-color);
+    color: var(--text2-color);
     
-    border: 2px solid #242323;
+    border: 2px solid var(--shadow-color);
     border-radius: 3px;
     font-family: sans-serif;
 
@@ -471,8 +473,8 @@ body {
 }
 
 #skill-box p {
-    background-color: #242323;
-    color: #d8d8d8;
+    background-color: var(--shadow-color);
+    color: var(--text-color);
 }
 
 .skills ul {
@@ -504,7 +506,7 @@ body {
 
 .footer {
     display: flex;
-    background-color: #2c2b2b;
+    background-color: var(--element-bg-color);
 
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 
@@ -521,7 +523,7 @@ body {
     font-family: sans-serif;
     font-size: .7em;
 
-    color: #d8d8d8;
+    color: var(--text-color);
 }
 
 .contact {
