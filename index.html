@@ -22,7 +22,13 @@
 						<li class="nav-btn" data-row-id="row2" onclick="show('skills', 'start')">My skills</li>
 						<li class="nav-btn" data-row-id="row4" onclick="show('footer', 'end')">Contact me</li>
 					 </ul>
-					 <button class ="theme-switch" onclick="toggleMode()">Switch theme</button>
+				</div>
+				<div class="switch">
+					<input type="checkbox" class="switch__input" id="Switch" onclick="toggleMode()">
+					<label class="switch__label" for="Switch">
+						<span class="switch__indicator"></span>
+						<span class="switch__decoration"></span>
+					</label>
 				</div>
 			 </div>
 		</div>
@@ -67,7 +73,7 @@
 					</div>
 					<div id="project" class="project" onclick="openProject('src/projects/nomo.htm')">
 						<div class="show">
-							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<img id="image" src="res/pictures/Screenshot 2024-12-13 154143.png">
 							<p id="date">2023-2024</p>
 							<p id="game-title">nomoottori</p>
 						</div>
@@ -97,7 +103,7 @@
 					</div>
 					<div id="project" class="project" onclick="openProject('src/projects/es_sim.html')">
 						<div class="show">
-							<img id="image" src="res/pictures/ES simulator def icon.png">
+							<img id="image" src="res/pictures/es2.png">
 							<p id="date">2019</p>
 							<p id="game-title">ES Simulator</p>
 						</div>
