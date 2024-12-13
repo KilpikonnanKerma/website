@@ -7,11 +7,16 @@ window.onload = function() {document.getElementById("navbar").style.top = "-100p
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
     var currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-50px";
-    }
+    document.getElementById("navbar").style.top="-50px";
+    setTimeout(function(){document.getElementById("navbar").style.top="0";}, 1750);
+
+
+    // if (prevScrollpos > currentScrollPos) {
+    //     document.getElementById("navbar").style.top = "0";
+    // } else {
+    //     // document.getElementById("navbar").style.top = "-50px";
+
+    // }
     prevScrollpos = currentScrollPos;
 
     // if (window.scrollY <= 0) {
@@ -19,24 +24,9 @@ window.onscroll = function() {
     // }
 }
 
-function showProjects() {
-    document.getElementById('projects-title').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
-}
-
-function showAbout() {
-    document.getElementById('start').scrollIntoView({
-        block: 'end', behavior: 'smooth'});
-}
-
-function showSkills() {
-    document.getElementById('skills-title').scrollIntoView({
-        block: 'start', behavior: 'smooth'});
-}
-
-function showContact() {
-    document.getElementById('footer').scrollIntoView({
-        block: 'start', behavior: 'smooth'
+function show(item, position) {
+    document.getElementById(item).scrollIntoView({
+        block: position, behavior: 'smooth'
     });
 }
 

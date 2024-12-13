@@ -101,18 +101,26 @@ body {
 
 .part-title {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 2rem;
+    font-weight: 700;
 
-    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: .075rem;
 
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 13px;
+
+    margin: 0 2rem 0 2rem;
 
     border-radius: 3px;
 
     background-color: #242323;
     color: #d8d8d8;
+
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.3),
+        0 6px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 #intro {
@@ -234,6 +242,10 @@ body {
     height: 50%;
 }
 
+.projects-holder {
+    position: absolute;
+}
+
 .projects {
     display: grid;
     justify-content: center;
@@ -248,6 +260,10 @@ body {
 }
 
 #project {
+
+    position: relative;
+    transform-origin: center;
+
     border: 2px solid #2c2b2b;
     border-radius: 3px;
 
@@ -265,6 +281,11 @@ body {
 
     font-family: sans-serif;
 
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.3),
+        0 6px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+
     background-color: #2c2b2b;
     color: #c4c3c6;
 }
@@ -275,10 +296,18 @@ body {
 
 .show:hover ~ .hide {
     display:contents;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 #project:hover {
     border: 5px solid #585858;
+
+    box-shadow: 
+        0 15px 30px rgba(0,0,0,0.4),
+        0 10px 10px rgba(0,0,0,0.3);
 }
 
 #project #image {
@@ -303,6 +332,12 @@ body {
     padding: 5px;
 }
 
+@media screen and (min-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(5, 20%);
+    }
+}
+
 @media screen and (min-width: 951px) {
     .projects {
         grid-template-columns: repeat(4, 25%);
@@ -323,6 +358,10 @@ body {
 }
 
 @media screen and (max-width: 950px) {
+    .projects {
+        grid-template-columns: repeat(3, 33%);
+    }
+
     #project {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -401,6 +440,11 @@ body {
     border: 2px solid #242323;
     border-radius: 3px;
     font-family: sans-serif;
+
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.3),
+        0 6px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 #skill-box p {
