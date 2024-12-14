@@ -3,7 +3,8 @@ function Start() {
 }
 
 window.onload = function() {
-    document.getElementById("navbar").style.top = "-100px"; ''
+    // document.getElementById("navbar").style.top = "-100px";
+
     const theme = localStorage.getItem('theme');
     if (theme) {
         document.body.setAttribute('data-theme', theme);
