@@ -312,63 +312,6 @@ body {
     margin-top: 13em;
 }
 
-/* .boder .border-button {
-    background: var(--text2-color);
-    margin: 10px;
-    padding: 15px 18px;
-
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    transition: .3s;
-    z-index: 1;
-
-    color: var(--text2-color);
-    cursor: crosshair;
-	border: none;
-    border-radius: 3px;
-
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: sans-serif;
-    font-weight: bolder;
-
-	background-image: repeating-linear-gradient(45deg, #242c25 12px 36px, #2c2b2b 36px 60px, #585858 60px 84px);
-    color: var(--shadow-color);
-    background-size: 300% 150%;
-}
-
-.boder .border-button:hover {
-    background-position: 20% center;
-}
-
-.boder .border-button:active:after {
-    /* width: 0; *
-	transition: 69ms ease-in-out;
-
-	width: 110%;
-	height: 110%;
-
-    border-radius: 0px;
-}
-
-.boder .border-button:after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 14px);
-    height: calc(100% - 14px);
-    transform-origin: center;
-    background: #c4c3c6;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    border-radius: 3px;
-
-	transition: 69ms ease-in-out;
-} */
-
 .oth-button {
     padding: 6px;
     margin: 0.3em;
