@@ -202,11 +202,17 @@ body {
 
 .header #nav{
 	height:60px;
-	width:400px;
+	width:499px;
 	margin: 0 auto;
 }
 
 .header #nav ul{position:relative;}
+
+.header #nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: crosshair;
+}
 
 .header .nav-btn{
 	width:99px;
