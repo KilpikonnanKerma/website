@@ -59,10 +59,54 @@ function backToTop() {
         top: 0, behavior: 'smooth'})
 }
 
-function openProjectInANewTab(file_path) {
-    window.open(file_path);
+// function openProjectInANewTab(file_path) {
+//     window.open(file_path);
+// }
+
+// function openProject(file_path) {
+//     window.location.href = file_path;
+// }
+
+
+let slideIndex = 1;
+showSlides(slideIndex)
+function openProject(projectId) {
+	document.querySelectorAll('.project-popup').forEach(hideDiv => {
+		hideDiv.style.display = 'none';
+	});
+
+	const targetHide = document.getElementById(projectId);
+
+	if (targetHide && targetHide.classList.contains('project-popup')) {
+		targetHide.style.display = 'block';
+	}
 }
 
-function openProject(file_path) {
-    window.location.href = file_path;
+function closeProject(projectId) {
+    const targetHide = document.getElementById(projectId);
+
+    if (targetHide && targetHide.classList.contains('project-popup')) {
+        targetHide.style.display = 'none';
+        slideIndex = 1;
+    }
+}
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
 }
