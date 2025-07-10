@@ -1,51 +1,31 @@
-* {
-    padding: 0;
-    margin: 0;
+
+
+
+[data-theme="dark"] {
+    --bg-color: #0a0a2a;
+    --element-bg-color: #2c2b2b;
+    --text-color: #d8d8d8;
+    --text2-color: #c4c3c6;
+    --shadow-color: #242323;
+    --button-color: #585858;
+
+    --nav-bar-border: rgba(255,255,255,0.2);
+    --nav-bar-text-shadow: rgba(0,0,0,0.8);
 }
 
-body {
-    background-color: #2c2b2b;
+[data-theme="light"] {
+    --bg-color: #d8d8d8;
+    --element-bg-color: #c4c3c6;
+    --text-color: #2c2b2b;
+    --text2-color: #242323;
+    --shadow-color: #b6b5b5;
+
+    --nav-bar-border: rgba(0,0,0,0.2);
+    --nav-bar-text-shadow: rgba(180,180,180,0.8);
 }
 
-.space {
-    height: 50%;
-}
 
 /*-----------------------------------------------------------------------*/
-
-.oth-button {
-    padding: 6px;
-    /* margin: 0.3em; */
-
-    background-color: #585858;
-    color: #c4c3c6;
-    cursor: crosshair;
-
-	border: none;
-    border-radius: 3px;
-
-    font-family: sans-serif;
-    font-weight: 700;
-
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    transition: .3s;
-
-    margin: .5rem;
-}
-
-.oth-button:hover {
-    background-color: #2c2b2b;
-}
-
-.project {
-    /* display: flex; */
-}
 
 .slideshow-container {
     /* max-width: 30rem; */
@@ -57,7 +37,7 @@ body {
 
     margin: auto;
 
-    width: 100%;
+    width: 80%;
     height: 40%;
 }
 
@@ -65,7 +45,7 @@ body {
     display: none;
     padding: 1rem;
 
-    box-shadow: 0px 2px #2c2b2b;
+    box-shadow: 0px 2px var(--element-bg-color);
 }
 
 .activus {
@@ -91,7 +71,7 @@ body {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #d8d8d8;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 18px;
 
@@ -106,21 +86,11 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: #2c2b2b;
-}
-
-.text {
-    color: #d8d8d8;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    background-color: var(--element-bg-color);
 }
 
 .numbertext {
-    color: #d8d8d8;
+    color: var(--text-color);
     font-size: 12px;
     font-family: sans-serif;
     padding: 8px 12px;
@@ -139,8 +109,10 @@ body {
 }
 
 .about-project {
-    border: 2px solid #d8d8d8;
+    border: 2px solid var(--text-color);
     border-radius: 3px;
+
+    background-color: var(--element-bg-color);
 
     margin-top: 4rem;
     margin-left: 10%;
@@ -155,7 +127,7 @@ body {
     font-family: sans-serif;
     font-size: 1.2em;
 
-    color: #c4c3c6;
+    color: var(--text2-color);
 
     /* margin-left: 10%; */
     /* margin-right: 10%; */

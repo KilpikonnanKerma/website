@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Nicon nettisivu</title>
 		<link rel="stylesheet" href="src/styles.css">
+		<link rel="stylesheet" href="src/project_general.css">
 		<script src="src/script.js"></script>
 
 		<script>
@@ -40,39 +41,130 @@
 				<p class="background">
 					I have been interested about programming and computers from a young age. 
 				</p>
-				<p>My hobbies are playing games, making games/websites/other stuff and playing guitar.</p>
-				<!-- <div class="buttons">
-					<button id="projects-button" class="border-button" onclick="showProjects()">my Projects</button>
-					<button id="about-button" class="border-button" onclick="showAbout()">More about me</button>
-					<button id="skills-button" class="border-button" onclick="showSkills()">My skills</button>
-					<button id="random-button" class="border-button" onclick="">Other Random stuff</button>
-				</div> -->
+				<p>My hobbies are playing games, making stuff and playing guitar.</p>
 			</div>
 
 			<div id="projects-holder">
 				<p class="part-title" id="projects-title">My projects</p>
 				<div id="projects" class="projects">
-					<div id="project" class="project" onclick="openProject('src/projects/3d.html')">
+					<div id="project" class="project" onclick="openProject('termemum')">
+						<div class="show">
+							<img id="image" src="../../res/pictures/termemum2.png">
+							<p id="date">2025</p>
+							<p id="game-title">Termemum</p>
+						</div>
+						<div class="hide">
+							<p>Terminal emulator written in C for X11.</p>
+						</div>
+					</div>
+					<div class="project-popup" id="termemum">
+						<button class="oth-button" onclick="closeProject('termemum')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<img src="../../res/pictures/termemum1.png">
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									Termemum is a terminal emulator written in C for X11. I made it as a challenge for myself.
+									The terminal emulator supports all unix commands that any other terminal emulator supports since it was built with libVTerm.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									It has been tested to work with Wayland on mulitple desktop environments and window managers.
+									Even though it was built for X11.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									The project is extremely lightweight but I'm planning to add more features in the future.
+									Termemum is open source and can be found and installed on my github. <a href="https://github.com/KilpikonnanKerma/termemum">Termemum</a>
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+
+					<div id="project" class="project" onclick="openProject('vsaeditor')">
+						<div class="show">
+							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
+							<p id="date">2025</p>
+							<p id="game-title">VSA Editor</p>
+						</div>
+						<div class="hide">
+							<p>Level editor made in Java.</p>
+						</div>
+					</div>
+					<div class="project-popup" id="vsaeditor">
+						<button class="oth-button" onclick="closeProject('vsaeditor')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<!-- <div class="numbertext">1 / 3</div>
+									<img src="../../res/pictures/piktir.jpg"> -->
+									<p>Picture will be added later.</p>
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									VSAEditor is a level editor made in Java. I originally made it for another game project, but later it turned out to
+									be its own thing. The editor supports creating multiple levels in a single project. It has event, entity and basic scripting support.
+									I'm also planning on adding more features.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									The project is open source and can be found on my github. <a href="https://github.com/KilpikonnanKerma/vsaeditor">VSA Editor</a>
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('animal-avalanche')">
 						<div class="show">
 							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
 							<p id="date">2025</p>
 							<p id="game-title">Animal Avalanche</p>
 						</div>
 						<div class="hide">
-							<p>A group project started in January 2025.</p>
+							<p>Animal skiing game made in Unity 6.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/portfolio.htm')">
-						<div class="show">
-							<img id="image" src="res/pictures/portfolio.png">
-							<p id="date">2024-2025</p>
-							<p id="game-title">Portfolio website</p>
-						</div>
-						<div class="hide">
-							<p>The website you are currently on.</p>
+					<div class="project-popup" id="animal-avalanche">
+						<button class="oth-button" onclick="closeProject('animal-avalanche')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<!-- <div class="numbertext">1 / 3</div>
+									<img src="../../res/pictures/piktir.jpg"> -->
+									<p>Picture will be added later.</p>
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									Animal Avalanche is a 3D skiing game made in Unity 6. It is my first ever group project.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									In the game you skii through various mountains as different animals. The game has 6 levels and an open world map.
+									We are planning on releasing the game in 2026.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									We also made a trailer for the game.
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/mbbdRTokdAo?si=4WzDlRc49CoWbnR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</p>
+							</div>
+							<br><br>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/ctc.htm')">
+					<div id="project" class="project" onclick="openProject('ctc')">
 						<div class="show">
 							<img id="image" src="res/pictures/ctc.png">
 							<p id="date">2024-2025</p>
@@ -82,7 +174,39 @@
 							<p>School project platformer made in Godot 4.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/nomo.htm')">
+					<div class="project-popup" id="ctc">
+						<button class="oth-button" onclick="closeProject('ctc')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<img src="../../res/pictures/piktir.jpg">
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									Cursed to Consume is a 2D platformer I made as a school 
+									project. I started the project in September 2024 and it currently 
+									has one playable level.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									A witch has cursed you to consume little kids. 
+									In this demo you are trying to escape from the
+									witch's dungeon which is located below a normal
+									house all while needing to consume some children.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									It was made with Godot 4 and GD Script.
+									For sprites/animations I used a site called pixilart.com. 
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('nomoottori')">
 						<div class="show">
 							<img id="image" src="res/pictures/Screenshot 2024-12-13 154143.png">
 							<p id="date">2023-2024</p>
@@ -92,7 +216,33 @@
 							<p>Game/Graphics engine written in C and OpenGL.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/tytt.htm')">
+					<div class="project-popup" id="nomoottori">
+						<button class="oth-button" onclick="closeProject('nomoottori')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<img src="../../res/pictures/Screenshot 2024-12-13 154143.png">
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									Nomoottori is a graphics/game engine written in C and OpenGL.
+									I started the project in November 2023 as a challenge and for fun.
+									It uses software rendering and raycasting for rendering.
+									(i.e. looks like Duke Nukem 3D).
+								</p>
+								<p class="about-project-text"> 
+									There is no available demo of this project.
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('tytt')">
 						<div class="show">
 							<img id="image" src="res/pictures/Kuva1.png">
 							<p id="date">2020-2021</p>
@@ -102,7 +252,33 @@
 							<p>Futuristic Multiplayer FPS-Shooter with jetpacks and laser guns.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/os.html')">
+					<div class="project-popup" id="tytt">
+						<button class="oth-button" onclick="closeProject('tytt')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<img src="../../res/pictures/Screenshot 2024-12-01 112234.png">
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									The Year Three Thousand (TYTT) is a game I made in fifth/sixth grade. It is a futuristic multiplayer FPS shooter game.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									I made it with Unity and it was my first multiplayer
+									game I ever made. It even has user accounts and stats.
+									Kinda cringey game but I learned a lot while making it. <!-- I haven't
+									tested the servers but they could still be working. -->
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('kodeos')">
 						<div class="show">
 							<img id="image" src="https://wallpaperaccess.com/full/4148220.jpg">
 							<p id="date">2019-2023</p>
@@ -112,7 +288,36 @@
 							<p>32bit operating system written in assembly.</p>
 						</div>
 					</div>
-					<div id="project" class="project" onclick="openProject('src/projects/es_sim.html')">
+					<div class="project-popup" id="kodeos">
+						<button class="oth-button" onclick="closeProject('kodeos')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<!-- <img src="../../res/pictures/Screenshot 2024-12-01 112234.png"> -->
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									KodeOS is a 16/32bit operating system written in x86 assembly using NASM. I started the project
+									on sixth grade for fun (it was not). The OS features a simple file system, a BASIC (the language) compiler
+									some applications like text editor, music listening software and stuff like that.
+									It was actually usable for everything else but internet since it doesn't have
+									internet access or a web browser.
+								</p>
+								<p class="about-project-text" style="margin-top: -3rem;">
+									I am not planning on adding the .iso file here or anything.
+									Currently the source code is broken for some reason, so when I fix it I'll maybe
+									add some screenshots here.
+								</p>
+							</div>
+							<br><br>
+						</div>
+					</div>
+					<div id="project" class="project" onclick="openProject('es-sim')">
 						<div class="show">
 							<img id="image" src="res/pictures/es2.png">
 							<p id="date">2019</p>
@@ -120,6 +325,37 @@
 						</div>
 						<div class="hide">
 							<p>Shitty game I made in fifth grade.</p>
+						</div>
+					</div>
+					<div class="project-popup" id="es-sim">
+						<button class="oth-button" onclick="closeProject('es-sim')">Back</button>
+		
+						<div class="project">
+							<div class="slideshow-container">
+								<style>
+									.slide {background-color: var(--element-bg-color);}
+								</style>
+								<div class="slide fade activus">
+									<img src="../../res/pictures/es1.png">
+								</div>
+							</div>
+							<div class="about-project">
+								<p class="about-project-text">
+									ES Simulator is a game I made in fifth grade. I made it as a joke using Unity 2017.
+									In the game you drink "ES" which is actually cola because I couldn't find any 
+									energy drink models on the Unity Asset store.
+								</p>
+								<!-- <a href="https://gamejolt.com/games/es_simulator/472663" id="download-btn" class="fa fa-download">&nbsp<p>View game page</p></a> -->
+								<iframe src="https://widgets.gamejolt.com/package/v1?key=rEQpAFSq" frameborder="0" width="80%" height="175" style="display: flex; margin: auto;"></iframe>
+								<div class="videos">
+									<video id="video" controls="1" src="../../res/pictures/Early ES Simulator footage.mp4"></video>
+									<p>Early footage of ES Simulator.</p>
+
+									<video id="video" controls="1" src="../../res/pictures/ES simulator - Driver disease.mp4"></video>
+									<p>A youtuber called Pasha Ly made a video of the game.</p>
+								</div>
+							</div>
+							<br><br>
 						</div>
 					</div>
 				</div>
@@ -139,7 +375,6 @@
 							<li>Java</li>
 							<li>HTML/CSS/JS</li>
 							<li>Batch and shell scripts</li>
-							<li>GDScript</li>
 							<li>And little amounts of many other languages.</li>
 						</ul>
 					</div>
@@ -154,14 +389,12 @@
 							<li>JetBrains IDEs</li>
 							<li>DaVinci Resolve</li>
 							<li>Some Adobe tools (e.g. Photoshop, XD)</li>
-							<li>Microsoft Office tools.</li>
 						</ul>
 					</div>
 					<div class="other" id="skill-box">
 						<p class="title">Other skills</p>
 						<ul>
-							<li>Great knowledge about computers.</li>
-							<li>I can play Master of Puppets at -86 Toronto pace.</li>
+							<li>Great knowledge about computers and hardware.</li>
 							<li>I'm a pretty fast learner.</li>
 						</ul>
 					</div>
@@ -169,7 +402,6 @@
 			</div>
 		</div>
 		<footer class="footer" id="footer">
-			<p class="cpright">Copyright &#169; 2024-2025 Nico Rajala. All rights reserved</p>
 			<div class="contact">
 				<p id="text">Contact me: </p>
 				<button class="btn3"><a href="https://github.com/KilpikonnanKerma">
@@ -178,6 +410,11 @@
 				<button class="btn3"><a href="mailto:rajalanico08@gmail.com">
 					<svg height="25px" width="22px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="git"><path d="M28 5H4c-1.104 0-2 .896-2 2v18c0 1.104.896 2 2 2h24c1.104 0 2-.896 2-2V7c0-1.104-.896-2-2-2zm0 4.879L16 18 4 9.879V7l12 8 12-8v2.879zM4 23V11.885l11.446 7.63c.269.18.594.274.921.274s.652-.094.92-.274L28 11.885V23H4z"></path></svg>
 				</a></button>
+			</div>
+
+			<div class="footer-text">
+				<p class="cpright">Last updated: 10.7.2025</p>
+				<p class="cpright">&#169; 2024-2025 Nico Rajala. All rights reserved</p>
 			</div>
 		</footer>
 	</body>
