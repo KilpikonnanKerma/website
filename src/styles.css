@@ -370,7 +370,6 @@ body {
 }
 
 #project {
-
     position: relative;
     transform-origin: center;
 
@@ -393,32 +392,42 @@ body {
     box-shadow: 
         0 10px 20px rgba(0,0,0,0.3),
         0 6px 6px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+    z-index: 1;
 
     background-color: var(--element-bg-color);
     color: var(--text2-color);
 }
 
 .hide {
-    display: none;
-}
-
-.show:hover ~ .hide {
-    display:contents;
     position: absolute;
-    bottom: 0;
+    bottom: 40%;
     left: 0;
     width: 100%;
+
+    text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
 #project:hover {
-    /* border: 5px solid var(--button-color); */
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.7),
+        0 10px 10px rgba(0,0,0,0.4);
+    transform: translateY(-6px) scale(1.03);
+    z-index: 10;
+}
 
-    box-shadow: 
-        0 15px 30px rgba(0,0,0,0.4),
-        0 10px 10px rgba(0,0,0,0.3);
-    
-    transform: scale(1.05);
+#project:hover .hide {
+    opacity: 1;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 #project #image {
@@ -663,6 +672,11 @@ body {
     border-radius: 50%;
     background-color: #d8d8d8;
     transition: .3s all;
+}
+ 
+/* Default icon color inside the circular button; hover rule below already sets white */
+.btn3 .git {
+    fill: #000;
 }
   
 .btn3:hover {
